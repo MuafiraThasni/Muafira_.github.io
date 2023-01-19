@@ -281,6 +281,7 @@ header {
 .call-to-action {
     h2 {
         margin: 0 auto 20px;
+        color:rgb(10, 10, 10)
     }
 }
 
@@ -296,11 +297,11 @@ header {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include button-variant($theme-dark, rgb(58, 56, 56), rgb(58, 56, 56));
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant(rgb(58, 56, 56), $theme-primary, $theme-primary);
 }
 
 .btn {
@@ -324,24 +325,24 @@ header {
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
-    color: white;
+    color: rgb(58, 56, 56);
     text-shadow: none;
     background: $theme-dark;
 }
 
 ::selection {
-    color: white;
+    color: rgb(58, 56, 56);
     text-shadow: none;
-    background: $theme-dark;
+    background: $theme-primary;
 }
 
 img::selection {
-    color: white;
+    color: rgb(58, 56, 56);
     background: transparent;
 }
 
 img::-moz-selection {
-    color: white;
+    color:rgb(58, 56, 56);
     background: transparent;
 }
 
